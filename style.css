@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Ropa Sans", sans-serif;
+}
+nav {
+  background: black;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+}
+label.logo {
+  color: white;
+  line-height: 80px;
+  padding: 0 0px;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a:hover {
+  background-color: #5a76fd;
+  color: #fff;
+  padding: 7px 13px;
+  box-shadow: 2px 4px 1px rgba(255, 255, 255, 0.945);
+  transition: all ease 0.2s;
+  border-radius: 5px;
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+/* MAIN */
+.main {
+  height: 100%;
+  background-color: rgb(236, 234, 230);
+  padding-left: 13%;
+  padding-right: 10%;
+  padding-bottom: 100px;
+}
+.container {
+  text-align: center;
+  padding-top: 150px;
+}
+.main .container h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  padding-bottom: 25px;
+}
+.main .container p {
+  font-size: 32px;
+  padding-bottom: 200px;
+}
+
+/* Contents */
+.main .contents h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  border-bottom: 1px solid black;
+}
+.main .contents p {
+  padding-top: 20px;
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
